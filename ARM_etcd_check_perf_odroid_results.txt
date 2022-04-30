@@ -53,6 +53,18 @@ Slowest request took too long: 0.832070s
 Stddev too high: 0.125491s
 FAIL
 
+root@samsung-arm-Exynos5422-octacore:~/Etcd_ARM_benchmarking# etcdctl check perf --load="m" --auto-compact=true --auto-defrag=true
+ 60 / 60 Boooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo! 100.00% 1m0s
+Compacting with revision 55405
+Compacted with revision 55405
+Defragmenting "127.0.0.1:2379"
+Defragmented "127.0.0.1:2379"
+PASS: Throughput is 924 writes/s
+Slowest request took too long: 0.831408s
+PASS: Stddev is 0.068246s
+FAIL
+
+
 root@samsung-arm-Exynos5422-octacore:~/Etcd_ARM_benchmarking# etcdctl check perf --load="l" --auto-compact=true --auto-defrag=true
  60 / 60 Boooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo! 100.00% 1m0s
 Compacting with revision 216275
