@@ -1,0 +1,245 @@
+root@samsung-arm-Exynos5422-octacore:~/Etcd_ARM_benchmarking# etcdctl check perf --load="s" --auto-compact=true --auto-defrag=true
+ 60 / 60 Boooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo! 100.00% 1m0s
+Compacting with revision 17376
+Compacted with revision 17376
+Defragmenting "127.0.0.1:2379"
+Defragmented "127.0.0.1:2379"
+PASS: Throughput is 150 writes/s
+PASS: Slowest request took 0.140642s
+PASS: Stddev is 0.005700s
+PASS
+
+root@samsung-arm-Exynos5422-octacore:~/Etcd_ARM_benchmarking# etcdctl check perf --load="s" --auto-compact=true --auto-defrag=true
+ 60 / 60 Boooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo! 100.00% 1m0s
+Compacting with revision 26376
+Compacted with revision 26376
+Defragmenting "127.0.0.1:2379"
+Defragmented "127.0.0.1:2379"
+PASS: Throughput is 150 writes/s
+PASS: Slowest request took 0.094723s
+PASS: Stddev is 0.003697s
+PASS
+
+root@samsung-arm-Exynos5422-octacore:~/Etcd_ARM_benchmarking# etcdctl check perf --load="s" --auto-compact=true --auto-defrag=true
+ 60 / 60 Boooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo! 100.00% 1m0s
+Compacting with revision 35375
+Compacted with revision 35375
+Defragmenting "127.0.0.1:2379"
+Defragmented "127.0.0.1:2379"
+PASS: Throughput is 151 writes/s
+PASS: Slowest request took 0.061567s
+PASS: Stddev is 0.003009s
+PASS
+
+
+root@samsung-arm-Exynos5422-octacore:~/Etcd_ARM_benchmarking# etcdctl check perf --load="m" --auto-compact=true --auto-defrag=true
+ 60 / 60 Boooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo! 100.00% 1m0s
+Compacting with revision 88829
+Compacted with revision 88829
+Defragmenting "127.0.0.1:2379"
+Defragmented "127.0.0.1:2379"
+FAIL: Throughput too low: 891 writes/s
+Slowest request took too long: 0.838694s
+Stddev too high: 0.116748s
+FAIL
+root@samsung-arm-Exynos5422-octacore:~/Etcd_ARM_benchmarking# etcdctl check perf --load="m" --auto-compact=true --auto-defrag=true
+ 60 / 60 Boooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo! 100.00% 1m0s
+Compacting with revision 53084
+Compacted with revision 53084
+Defragmenting "127.0.0.1:2379"
+Defragmented "127.0.0.1:2379"
+FAIL: Throughput too low: 886 writes/s
+Slowest request took too long: 0.832070s
+Stddev too high: 0.125491s
+FAIL
+
+root@samsung-arm-Exynos5422-octacore:~/Etcd_ARM_benchmarking# etcdctl check perf --load="l" --auto-compact=true --auto-defrag=true
+ 60 / 60 Boooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo! 100.00% 1m0s
+Compacting with revision 216275
+Compacted with revision 216275
+Defragmenting "127.0.0.1:2379"
+Defragmented "127.0.0.1:2379"
+FAIL: Throughput too low: 1822 writes/s
+Slowest request took too long: 1.328181s
+Stddev too high: 0.115943s
+FAIL
+
+
+root@samsung-arm-Exynos5422-octacore:~/Etcd_ARM_benchmarking# etcdctl check perf --load="xl" --auto-compact=true --auto-defrag=true
+ 60 / 60 Boooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo! 100.00% 1m0s
+Compacting with revision 104535
+Compacted with revision 104535
+Defragmenting "127.0.0.1:2379"
+Defragmented "127.0.0.1:2379"
+FAIL: Throughput too low: 1718 writes/s
+Slowest request took too long: 3.839551s
+Stddev too high: 0.276444s
+FAIL
+
+root@samsung-arm-Exynos5422-octacore:~/Etcd_ARM_benchmarking# etcdctl check perf --load="s" --auto-compact=true --auto-defrag=true
+ 60 / 60 Booooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo! 100.00% 1m0s
+Compacting with revision 8949
+Compacted with revision 8949
+Defragmenting "127.0.0.1:2379"
+Defragmented "127.0.0.1:2379"
+PASS: Throughput is 150 writes/s
+Slowest request took too long: 0.759609s
+PASS: Stddev is 0.074232s
+FAIL
+
+root@samsung-arm-Exynos5422-octacore:~/Etcd_ARM_benchmarking# /tmp/etcdctl check perf --load="s" --auto-compact=true --auto-defrag=true
+ 60 / 60 Boooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo! 100.00% 1m0s
+Compacting with revision 8971
+Compacted with revision 8971
+Defragmenting "127.0.0.1:2379"
+Defragmented "127.0.0.1:2379"
+PASS: Throughput is 150 writes/s
+Slowest request took too long: 0.840322s
+PASS: Stddev is 0.052901s
+FAIL
+root@samsung-arm-Exynos5422-octacore:~/Etcd_ARM_benchmarking# /tmp/etcdctl check perf --load="s" --auto-compact=true --auto-defrag=true
+ 60 / 60 Boooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo! 100.00% 1m0s
+Compacting with revision 8443
+Compacted with revision 8443
+Defragmenting "127.0.0.1:2379"
+Defragmented "127.0.0.1:2379"
+PASS: Throughput is 141 writes/s
+Slowest request took too long: 1.879689s
+Stddev too high: 0.206809s
+FAIL
+
+
+
+
+
+
+
+
+
+
+
+
+root@samsung-arm-Exynos5422-octacore:~# ulimit -a
+real-time non-blocking time  (microseconds, -R) unlimited
+core file size              (blocks, -c) 0
+data seg size               (kbytes, -d) unlimited
+scheduling priority                 (-e) 0
+file size                   (blocks, -f) unlimited
+pending signals                     (-i) 14828
+max locked memory           (kbytes, -l) 255024
+max memory size             (kbytes, -m) unlimited
+open files                          (-n) 1024
+pipe size                (512 bytes, -p) 8
+POSIX message queues         (bytes, -q) 819200
+real-time priority                  (-r) 0
+stack size                  (kbytes, -s) 8192
+cpu time                   (seconds, -t) unlimited
+max user processes                  (-u) 14828
+virtual memory              (kbytes, -v) unlimited
+file locks                          (-x) unlimited
+
+
+
+
+root@samsung-arm-Exynos5422-octacore:~/Etcd_ARM_benchmarking# ulimit -a
+real-time non-blocking time  (microseconds, -R) unlimited
+core file size              (blocks, -c) 0
+data seg size               (kbytes, -d) unlimited
+scheduling priority                 (-e) 0
+file size                   (blocks, -f) unlimited
+pending signals                     (-i) unlimited
+max locked memory           (kbytes, -l) unlimited
+max memory size             (kbytes, -m) unlimited
+open files                          (-n) 40000
+pipe size                (512 bytes, -p) 8
+POSIX message queues         (bytes, -q) 819200
+real-time priority                  (-r) 0
+stack size                  (kbytes, -s) 16384
+cpu time                   (seconds, -t) unlimited
+max user processes                  (-u) 50000
+virtual memory              (kbytes, -v) unlimited
+file locks                          (-x) unlimited
+root@samsung-arm-Exynos5422-octacore:~/Etcd_ARM_benchmarking# cat /proc/cpuinfo
+processor	: 0
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 84.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xc07
+CPU revision	: 3
+
+processor	: 1
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 84.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xc07
+CPU revision	: 3
+
+processor	: 2
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 84.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xc07
+CPU revision	: 3
+
+processor	: 3
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 84.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x0
+CPU part	: 0xc07
+CPU revision	: 3
+
+processor	: 4
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 120.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x2
+CPU part	: 0xc0f
+CPU revision	: 3
+
+processor	: 5
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 120.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x2
+CPU part	: 0xc0f
+CPU revision	: 3
+
+processor	: 6
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 120.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x2
+CPU part	: 0xc0f
+CPU revision	: 3
+
+processor	: 7
+model name	: ARMv7 Processor rev 3 (v7l)
+BogoMIPS	: 120.00
+Features	: half thumb fastmult vfp edsp neon vfpv3 tls vfpv4 idiva idivt vfpd32 lpae evtstrm 
+CPU implementer	: 0x41
+CPU architecture: 7
+CPU variant	: 0x2
+CPU part	: 0xc0f
+CPU revision	: 3
+
+Hardware	: Hardkernel ODROID-XU4
+Revision	: 0100
+Serial		: 0000000000000000
