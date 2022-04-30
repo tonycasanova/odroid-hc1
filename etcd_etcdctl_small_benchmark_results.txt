@@ -1,0 +1,22 @@
+root@samsung-arm-Exynos5422-octacore:~# etcdctl check perf --load="s" --auto-compact=true --auto-defrag=true
+ 60 / 60 Booooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo! 100.00% 1m0s
+Compacting with revision 8998
+Compacted with revision 8998
+Defragmenting "127.0.0.1:2379"
+Defragmented "127.0.0.1:2379"
+PASS: Throughput is 150 writes/s
+Slowest request took too long: 0.548527s
+PASS: Stddev is 0.032998s
+FAIL
+root@samsung-arm-Exynos5422-octacore:~# df
+Filesystem     1K-blocks    Used Available Use% Mounted on
+tmpfs             204020    3476    200544   2% /run
+/dev/mmcblk1p2 122777636 8810380 113931700   8% /
+tmpfs            1020096       0   1020096   0% /dev/shm
+tmpfs               5120       0      5120   0% /run/lock
+/dev/mmcblk1p1    130798   16894    113904  13% /media/boot
+tmpfs             204016       0    204016   0% /run/user/0
+root@samsung-arm-Exynos5422-octacore:~# fstrim -av
+/media/boot: 108.4 MiB (113711104 bytes) trimmed on /dev/mmcblk1p1
+/: 940 MiB (985669632 bytes) trimmed on /dev/mmcblk1p2
+root@samsung-arm-Exynos5422-octacore:~# 
