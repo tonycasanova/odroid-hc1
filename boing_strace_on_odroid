@@ -1,0 +1,30 @@
+root@samsung-arm-Exynos5422-octacore:/dev# strace -c -p 377
+strace: Process 377 attached
+^Cstrace: Process 377 detached
+% time     seconds  usecs/call     calls    errors syscall
+------ ----------- ----------- --------- --------- ----------------
+ 49.51    0.059751          16      3684        32 statx
+ 17.22    0.020785          33       624           read
+ 15.83    0.019109          28       670           openat
+  9.83    0.011860          17       670           close
+  3.88    0.004680          50        92           getdents64
+  1.76    0.002126          50        42           pselect6
+  1.35    0.001632          12       134           clock_gettime
+  0.51    0.000620          14        42           wait4
+  0.07    0.000082          20         4           getpid
+  0.03    0.000042          42         1           futex
+------ ----------- ----------- --------- --------- ----------------
+100.00    0.120687          20      5963        32 total
+
+root@samsung-arm-Exynos5422-octacore:/dev# ^C
+root@samsung-arm-Exynos5422-octacore:/dev# ps -aef | fgrep -i boinc
+boinc      377     1  0 01:18 ?        00:00:01 /usr/bin/boinc
+boinc      654   377 93 01:18 ?        00:02:48 ../../projects/universeathome.pl_universe/BHspin2_20_arm-unknown-linux-gnueabihf
+boinc      655   377 93 01:18 ?        00:02:48 ../../projects/universeathome.pl_universe/BHspin2_20_arm-unknown-linux-gnueabihf
+boinc      656   377 94 01:18 ?        00:02:49 ../../projects/universeathome.pl_universe/BHspin2_20_arm-unknown-linux-gnueabihf
+boinc      658   377 97 01:18 ?        00:02:55 ../../projects/universeathome.pl_universe/BHspin2_20_arm-unknown-linux-gnueabihf
+boinc      661   377 77 01:18 ?        00:02:18 ../../projects/universeathome.pl_universe/BHspin2_20_arm-unknown-linux-gnueabihf
+boinc      663   377 98 01:18 ?        00:02:56 ../../projects/universeathome.pl_universe/BHspin2_20_arm-unknown-linux-gnueabihf
+boinc      664   377 93 01:18 ?        00:02:49 ../../projects/universeathome.pl_universe/BHspin2_20_arm-unknown-linux-gnueabihf
+boinc      671   377 74 01:18 ?        00:02:14 ../../projects/universeathome.pl_universe/BHspin2_20_arm-unknown-linux-gnueabihf
+root       799   776  0 01:21 pts/0    00:00:00 grep -F --color=auto -i boinc
